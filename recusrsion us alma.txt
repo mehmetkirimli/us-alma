@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class main {
+
+    static int power(int a, int b) {
+        int result = 1;
+        for (int i = 1; i <= b; i++) {
+            result *= a;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int a, b;
+        Scanner bjk = new Scanner(System.in);
+        System.out.println("Taban degeri giriniz :");
+        a = bjk.nextInt();
+        System.out.println("Us degeri giriniz :");
+        b = bjk.nextInt();
+        System.out.println(power(a, b));
+
+    }
+}
